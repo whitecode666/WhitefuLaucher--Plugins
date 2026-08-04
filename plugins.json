@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "plugins": [
+    {
+      "id": "input_hot_switch",
+      "name": "Input Hot Switch",
+      "version": "1.0.0",
+      "developer": "whitecode666",
+      "description": "Chuyển đổi nhanh thiết bị đầu vào khi chơi game.",
+      "category": "utility",
+      "install_type": "zip",
+      "download_url": "https://raw.githubusercontent.com/whitecode666/WhitefuLaucher--Plugins/main/input_hot_switch.zip",
+      "dll_file_name": "input_hot_switch.dll",
+      "size_bytes": 82382
+    }
+  ]
+}
