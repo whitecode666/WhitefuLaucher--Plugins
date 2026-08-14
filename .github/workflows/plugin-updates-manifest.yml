@@ -1,0 +1,33 @@
+name: Generate plugin auto-update manifest
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - '*.zip'
+      - 'plugin-updates.json'
+      - 'scripts/Generate-PluginUpdates.ps1'
+      - '.github/workflows/plugin-updates-manifest.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate plugin-updates.json
+        shell: pwsh
+        run: ./scripts/Generate-PluginUpdates.ps1
+
+      - name: Commit manifest
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add plugin-updates.json
+          if git diff --cached --quiet; then echo 'No changes'; exit 0; fi
+          git commit -m 'Update plugin auto-update manifest [skip ci]'
+          git push
