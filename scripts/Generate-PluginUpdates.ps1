@@ -5,7 +5,7 @@ param(
 $RepoRawBase = 'https://raw.githubusercontent.com/whitecode666/WhitefuLaucher--Plugins/main'
 
 $known = @(
-    @{ Id = 'FuFuPlugin'; Zip = 'FuFuPlugin.zip'; Dll = 'WhitefuLaucher.UnlockerIsland.dll' }
+    @{ Id = 'WhiteFuPlugin'; Zip = 'WhiteFuPlugin.zip'; Dll = 'WhitefuLaucher.UnlockerIsland.dll' }
 )
 
 $shortSha = git -C $RootDir rev-parse --short HEAD 2>$null
