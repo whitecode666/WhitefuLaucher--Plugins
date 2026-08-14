@@ -2,14 +2,17 @@ param(
     [string]$RootDir = (Split-Path $PSScriptRoot -Parent)
 )
 
-$RepoRawBase = 'https://raw.githubusercontent.com/whitecode666/WhitefuLaucher--Plugins/main'
+$sha = git -C $RootDir rev-parse HEAD 2>$null
+if (-not $sha) { $sha = 'main' }
+
+$RepoRawBase = "https://raw.githubusercontent.com/whitecode666/WhitefuLaucher--Plugins/$sha"
+
+$shortSha = $sha
+if ($shortSha.Length -gt 7) { $shortSha = $shortSha.Substring(0, 7) }
 
 $known = @(
     @{ Id = 'WhiteFuPlugin'; Zip = 'WhiteFuPlugin.zip'; Dll = 'WhitefuLaucher.UnlockerIsland.dll' }
 )
-
-$shortSha = git -C $RootDir rev-parse --short HEAD 2>$null
-if (-not $shortSha) { $shortSha = 'local' }
 
 $entries = @()
 foreach ($k in $known) {
