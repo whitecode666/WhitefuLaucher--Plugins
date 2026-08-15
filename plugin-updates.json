@@ -1,14 +1,14 @@
 {
-  "schema_version": 1,
-  "plugins": [
-    {
-      "id": "WhiteFuPlugin",
-      "version": "auto-f27fde4",
-      "install_type": "zip",
-      "download_url": "https://raw.githubusercontent.com/whitecode666/WhitefuLaucher--Plugins/f27fde4f6835fd901b1f8f0d28b6d6c87c575dbb/WhiteFuPlugin.zip",
-      "dll_file_name": "WhitefuLaucher.UnlockerIsland.dll",
-      "file_hash": "8bb9288971771c1fb7090a4b45c4be8641ba22625bb7805ee0acadbbfa4fae9c",
-      "size_bytes": 197683
-    }
-  ]
+    "schema_version":  1,
+    "plugins":  [
+                    {
+                        "id":  "WhiteFuPlugin",
+                        "version":  "auto-51abdea",
+                        "install_type":  "zip",
+                        "download_url":  "https://raw.githubusercontent.com/whitecode666/WhitefuLaucher--Plugins/51abdea1ffb8d6aa3dbd0b4f22f69c1281ee8e03/WhiteFuPlugin.zip",
+                        "dll_file_name":  "WhitefuLaucher.UnlockerIsland.dll",
+                        "file_hash":  "9e814ef1f220e7bed096554c47d4b6841473c1df63d721c3388836960106772d",
+                        "size_bytes":  201893
+                    }
+                ]
 }
