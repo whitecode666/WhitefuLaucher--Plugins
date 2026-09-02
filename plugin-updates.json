@@ -3,12 +3,12 @@
   "plugins": [
     {
       "id": "WhiteFuPlugin",
-      "version": "1.5.3",
+      "version": "1.5.4",
       "install_type": "zip",
       "download_url": "https://github.com/whitecode666/WhitefuLaucher--Plugins/raw/refs/heads/main/WhiteFuPlugin.zip",
       "dll_file_name": "WhitefuLaucher.UnlockerIsland.dll",
-      "file_hash": "436E6CE3DB69F1EA64EF224AF7FE98A74F20D2FE3B403A714A7C18308AC132DD",
-      "size_bytes": 171843
+      "file_hash": "5A0E219363305E98ABEA44E39D7D310E9DC8EB1C4C0D33D5CE63B477D20591EB",
+      "size_bytes": 186342
     }
   ]
 }
